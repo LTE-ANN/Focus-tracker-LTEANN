@@ -1,17 +1,4 @@
-"""Korean-capable text drawing for OpenCV canvases.
-
-cv2.putText only ships the Hershey vector fonts, which have no Hangul
-glyphs — any Korean string drawn with it silently comes out blank. This
-routes text through Pillow with a system Korean font instead, but keeps
-plain-ASCII text on the original cv2.putText path (faster, and pixel-identical
-to what every screen already used for numbers/timers/labels).
-
-put_text() takes the exact same positional arguments as cv2.putText, so
-existing call sites only need `cv2.putText(...)` swapped for
-`kr_text.put_text(...)`. An extra `center=True` kwarg makes org the text's
-center point instead of its bottom-left baseline (used to replace the
-getTextSize-based manual centering that doesn't work for Hangul metrics).
-"""
+#opencv에서 한글을 지원하지 않기에, pillow를 이용하기로 하였다.
 
 import functools
 import os
