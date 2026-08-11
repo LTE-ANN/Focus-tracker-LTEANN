@@ -1,0 +1,10 @@
+opencv-python>=4.7.0
+mediapipe>=0.10.14
+numpy>=1.24.0
+sounddevice>=0.4.6
+fastapi
+uvicorn
+ultralytics>=8.3.0
+pillow
+
+#그 외 없다면 알아서 pip install 해주세요. (없을수도 있음)
